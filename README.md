@@ -8,3 +8,21 @@ Data architecture:
 
 ![image](https://github.com/angelo96m/docker-workshop/blob/main/arch_v4_workshops.jpg)
 
+About the Course
+
+Data Engineering Zoomcamp is a free, hands-on program that covers the end-to-end data engineering stack, including:
+
+    Docker & Docker Compose
+    SQL and relational databases
+    Infrastructure as Code with Terraform
+    Workflow orchestration
+    Data warehousing and analytics engineering
+    Batch and streaming data processing
+
+Official Resources
+
+    Course repository:
+    https://github.com/DataTalksClub/data-engineering-zoomcamp
+
+    DataTalksClub GitHub:
+    https://github.com/DataTalksClub
