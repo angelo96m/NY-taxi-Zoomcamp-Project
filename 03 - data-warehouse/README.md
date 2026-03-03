@@ -14,6 +14,7 @@ In this module, I worked with:
 ## Contents
 
 load_yellow_taxi_data.py: 
+
 Python scripts used to load NYC Yellow Taxi data (Jan 2024 - Jun 2024) into GCS. 
 
 
@@ -29,6 +30,7 @@ BigQuery SQL scripts used throughout the module:
 
 - [`yellow_taxi_data_homework.sql`]
   Homework solution for Module 3:
+  
 - Loading Yellow Taxi Trip data (Jan–Jun 2024) into GCS using Python
 - Creating external and materialized BigQuery tables
 - Query cost estimation and optimization analysis
