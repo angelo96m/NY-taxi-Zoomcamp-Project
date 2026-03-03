@@ -7,22 +7,24 @@ The purpose of this repo is to document my learning progress and practice core d
 Data architecture:
 
 ![image](https://github.com/angelo96m/docker-workshop/blob/main/arch_v4_workshops.jpg)
+## About the Course
 
-About the Course
+**Data Engineering Zoomcamp** is a free, hands-on program that covers the end-to-end data engineering stack, including:
+- Docker & Docker Compose
+- SQL and relational databases
+- Infrastructure as Code with Terraform
+- Workflow orchestration
+- Data warehousing and analytics engineering
+- Batch and streaming data processing
 
-Data Engineering Zoomcamp is a free, hands-on program that covers the end-to-end data engineering stack, including:
+## Official Resources
 
-    Docker & Docker Compose
-    SQL and relational databases
-    Infrastructure as Code with Terraform
-    Workflow orchestration
-    Data warehousing and analytics engineering
-    Batch and streaming data processing
+- Course repository:  
+  https://github.com/DataTalksClub/data-engineering-zoomcamp
 
-Official Resources
+- DataTalksClub GitHub:  
+  https://github.com/DataTalksClub
 
-    Course repository:
-    https://github.com/DataTalksClub/data-engineering-zoomcamp
+## Acknowledgements
 
-    DataTalksClub GitHub:
-    https://github.com/DataTalksClub
+Thanks to the instructors and contributors of **Data Engineering Zoomcamp** for making this course available and for the effort put into creating a practical and well-structured learning experience.
