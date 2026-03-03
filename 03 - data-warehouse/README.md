@@ -29,8 +29,7 @@ BigQuery SQL scripts used throughout the module:
   BigQuery ML example for predicting taxi tips. 
 
 - [`yellow_taxi_data_homework.sql`]
-
-  Homework solution for Module 3:
+Homework solution for Module 3:
   - Loading Yellow Taxi Trip data (Jan–Jun 2024) into GCS using Python
   - Creating external and materialized BigQuery tables
   - Query cost estimation and optimization analysis
