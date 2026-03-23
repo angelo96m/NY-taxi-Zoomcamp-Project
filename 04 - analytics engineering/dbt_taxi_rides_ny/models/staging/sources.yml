@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bigquery_data
+    description: "raw data from bigquery for NY taxi riders"
+    database: gen-lang-client-0293991661
+    schema: dbt_prod
+    tables: 
+      - name: external_green_tripdata
+      - name: external_yellow_tripdata

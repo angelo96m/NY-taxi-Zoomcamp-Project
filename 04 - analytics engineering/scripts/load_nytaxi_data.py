@@ -12,9 +12,9 @@ PROJECT_ID = "datazoomcamp-486517"
 BUCKET_NAME = "nytaxi_bucket_zoomcamp"
 DESTINATION_FOLDER = "nytaxi-data"
 
-BASE_URL = "https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green"
+BASE_URL = "https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/fhv"
 
-YEARS = ["2019", "2020"]
+YEARS = ["2019"]
 MONTHS = [f"{i:02d}" for i in range(1, 13)]
 
 DOWNLOAD_DIR = "downloads"
@@ -31,7 +31,7 @@ bucket = client.bucket(BUCKET_NAME)
 
 def download_file(year_month):
     year, month = year_month
-    filename = f"green_tripdata_{year}-{month}.csv.gz"
+    filename = f"FHV_tripdata_{year}-{month}.csv.gz"
     url = f"{BASE_URL}/{filename}"
     file_path = os.path.join(DOWNLOAD_DIR, filename)
 
