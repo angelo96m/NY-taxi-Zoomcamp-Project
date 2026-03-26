@@ -6,7 +6,6 @@ focusing on analytics engineering using dbt Cloud + BigQuery.
 In this module, I transformed raw NYC Taxi datasets into analytics-ready models using dbt, following a layered transformation approach.
 
 In this module, I worked with:
-
     - Connecting dbt Cloud to BigQuery
     - Structuring a dbt project (staging → intermediate → marts)
     - Building fact and dimension models
