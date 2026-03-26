@@ -70,6 +70,5 @@ Python utilities used to extend the warehouse with additional datasets:
 
 - `load_fhv_data.py`  
   Downloads FHV 2019 data, decompresses it, and uploads to GCS.
-
 - `load_nytaxi_data.py`  
 Downloads NY taxi data for Green and Yellow data trip for 2019 and 2020 year. 
