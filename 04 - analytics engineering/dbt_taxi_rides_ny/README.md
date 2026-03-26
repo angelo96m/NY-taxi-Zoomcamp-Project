@@ -47,7 +47,7 @@ Homework solution for Module 4, including:
 - SQL queries for quiz questions
 - Implementation of FHV 2019 staging model
 
-### taxi_rides_ny/
+### dbt_taxi_rides_ny/
 
 Complete dbt project used in this module.
 
@@ -61,6 +61,7 @@ Includes:
 - `seeds/`
 - `packages.yml`
 - `dbt_project.yml`
+- 
 This project was originally developed in dbt Cloud and later exported to this repository for reproducibility.
 
 ### scripts/
@@ -70,5 +71,5 @@ Python utilities used to extend the warehouse with additional datasets:
 - `load_fhv_data.py`  
   Downloads FHV 2019 data, decompresses it, and uploads to GCS.
 
-  - `load_nytaxi_data.py`  
-  Downloads NY taxi data for Green and Yellow data trip for 2019 and 2020 year. 
+- `load_nytaxi_data.py`  
+Downloads NY taxi data for Green and Yellow data trip for 2019 and 2020 year. 
