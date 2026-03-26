@@ -43,11 +43,9 @@ Layers implemented in dbt:
 
 Homework solution for Module 4, including:
 
-- Full dbt Cloud setup (DEV & PROD environments)
 - Production deployment job configuration
-- SQL queries and screenshots for all quiz questions
+- SQL queries for quiz questions
 - Implementation of FHV 2019 staging model
-- Record validation and result verification in BigQuery
 
 ### taxi_rides_ny/
 
@@ -69,5 +67,8 @@ This project was originally developed in dbt Cloud and later exported to this re
 
 Python utilities used to extend the warehouse with additional datasets:
 
-- `load_fhv_2019_to_gcs.py`  
+- `load_fhv_data.py`  
   Downloads FHV 2019 data, decompresses it, and uploads to GCS.
+
+  - `load_nytaxi_data.py`  
+  Downloads NY taxi data for Green and Yellow data trip for 2019 and 2020 year. 
