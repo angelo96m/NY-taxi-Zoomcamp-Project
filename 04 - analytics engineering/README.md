@@ -61,7 +61,7 @@ Includes:
 - `seeds/`
 - `packages.yml`
 - `dbt_project.yml`
-- 
+
 This project was originally developed in dbt Cloud and later exported to this repository for reproducibility.
 
 ### scripts/
