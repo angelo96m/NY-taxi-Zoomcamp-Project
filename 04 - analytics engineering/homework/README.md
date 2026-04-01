@@ -55,7 +55,7 @@ If you run `dbt run --select int_trips_unioned`, what models will be built?
 - `int_trips_unioned`, `int_trips`, and `fct_trips` (downstream dependencies)
 
 
-**Solution** 
+**Solution:** 
 `int_trips_unioned` only 
 
 
@@ -82,7 +82,7 @@ What happens when you run `dbt test --select fct_trips`?
 - dbt will pass the test with a warning about the new value
 - dbt will update the configuration to include the new value
 
-**Solution**
+**Solution:**
 dbt will fail the test, returning a non-zero exit code 
 
 
@@ -97,7 +97,7 @@ What is the count of records in the `fct_monthly_zone_revenue` model?
 - 12,184 
 - 15,421
 
-**Solution**
+**Solution:**
 12,184 
 
 NOTE: Run the following query in BigQuery: 
@@ -117,11 +117,12 @@ Which zone had the highest revenue?
 - East Harlem South
 - Washington Heights South
 
-**Solution**
+**Solution:**
 East Harlem North
 
 NOTE: Run the following query in BigQuery:
-```select
+```sql 
+select
     look.zone,
     sum(fare_amount) as total_revenue
 from `dbt_prod.stg_green_tripdata` as green
@@ -141,11 +142,12 @@ Using the `fct_monthly_zone_revenue` table, what is the **total number of trips*
 - 384,624 
 - 421,509
 
-**Solution**
+**Solution:**
 384,624 
 
 NOTE: Run the following query in BigQuery:
-```select
+```sql 
+select
     sum(total_monthly_trips) as total_trips
 from `dbt_prod.fct_monthly_zone_revenue`
 where service_type = 'Green'
@@ -170,9 +172,12 @@ What is the count of records in `stg_fhv_tripdata`?
 - 44,112,187
 
 
-**Solution**
+**Solution:**
 43,244,693 
 
 NOTE: Run the following query in BigQuery:
-```select count(*) from `dbt_prod.external_fhv_tripdata```
+```sql 
+select count(*) 
+from `dbt_prod.external_fhv_tripdata
+```
 
