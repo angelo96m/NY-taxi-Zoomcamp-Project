@@ -20,7 +20,7 @@ Data architecture:
 ## Official Resources
 
 - Course repository:  
-  https://github.com/DataTalksClub/data-engineering-zoomcam
+  https://github.com/DataTalksClub/data-engineering-zoomcamp
 
 - Youtube playlist:
 https://www.youtube.com/watch?v=JgspdlKXS-w&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=2
