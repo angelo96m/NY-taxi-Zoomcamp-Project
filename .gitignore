@@ -209,3 +209,8 @@ __marimo__/
 #ignore parquet files
 *.parquet
 *.json
+.bruin.yml
+logs/runs
+logs/*.log
+*.py[cod]
+logs/queries
