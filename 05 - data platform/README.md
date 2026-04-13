@@ -48,7 +48,6 @@ Includes:
 - `pipeline/assets/ingestion/` — Python ingestion asset + CSV seed asset
 - `pipeline/assets/staging/` — SQL cleaning and deduplication
 - `pipeline/assets/reports/` — SQL aggregation for analytics
-- `pipeline-summary.md` — Detailed notes on each layer and quality checks
 
 ### homework/
 
