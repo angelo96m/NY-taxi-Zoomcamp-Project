@@ -22,7 +22,7 @@ In a Bruin project, what are the required files/directories?
 - `.bruin.yml` and `pipeline/` with `pipeline.yml` and `assets/`
 - `pipeline.yml` and `assets/` only
 
-*Solution:* 
+Solution:
 `.bruin.yml` and `pipeline/` with `pipeline.yml` and `assets/`
 ---
 
