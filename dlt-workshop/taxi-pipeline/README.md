@@ -2,7 +2,7 @@
 
 Built a custom dlt pipeline to load NYC Yellow Taxi trip data from a paginated REST API into DuckDB.
 
-Project location: [workshop-dlt/taxi-pipeline]
+Project location: [dlt-workshop/taxi-pipeline]
 
 ## Data Source
 
@@ -85,7 +85,7 @@ cd taxi-pipeline
 uv run taxi_pipeline.py
 ```
 
-Pipeline fetched 10 pages (10,000 records total) and loaded into `taxi_data.taxi_trips`.
+Pipeline fetched 10 pages (10,000 records total).
 
 ## Exploring the Data
 
@@ -108,12 +108,12 @@ uv run dlt pipeline taxi_pipeline show
 SELECT
   MIN(CAST(trip_pickup_date_time AS DATE)) AS start_date,
   MAX(CAST(trip_pickup_date_time AS DATE)) AS end_date
-FROM taxi_data.taxi_trips;
+FROM taxi_trips;
 ```
 
 **Solution:** 2009-06-01 to 2009-07-01 
 
-![Q1 date range query result](https://github.com/angelo96m/docker-workshop/blob/main/images/dlt_workshop q1.png)
+![Q1 date range query result](https://github.com/angelo96m/docker-workshop/blob/main/images/dlt_workshop_q1.png)
 
 ### Question 2: What proportion of trips are paid with credit card?
 
@@ -128,12 +128,12 @@ SELECT
     100.0 * SUM(CASE WHEN payment_type = 'Credit' THEN 1 ELSE 0 END) / COUNT(*),
     2
   ) AS credit_card_percentage
-FROM taxi_data.taxi_trips;
+FROM taxi_trips;
 ```
 
 **Solution:** 26.66% 
 
-![Q2 credit card percentage query result](https://github.com/angelo96m/docker-workshop/blob/main/images/dlt_workshop q2.png)
+![Q2 credit card percentage query result](https://github.com/angelo96m/docker-workshop/blob/main/images/dlt_workshop_q2.png)
 
 ### Question 3: What is the total amount of money generated in tips?
 
@@ -145,9 +145,9 @@ FROM taxi_data.taxi_trips;
 ```sql
 SELECT
   ROUND(SUM(tip_amt), 2) AS total_tips
-FROM taxi_data.taxi_trips;
+FROM taxi_trips;
 ```
 
 **Solution:** $6,063.41 
 
-![Q3 total tips query result](https://github.com/angelo96m/docker-workshop/blob/main/images/dlt_workshop q3.png)
+![Q3 total tips query result](https://github.com/angelo96m/docker-workshop/blob/main/images/dlt_workshop_q3.png)
