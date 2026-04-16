@@ -6,7 +6,7 @@ The purpose of this repo is to document my learning progress and practice core d
 
 Data architecture:
 
-![image](https://github.com/angelo96m/docker-workshop/blob/main/project_arch.png)
+![image](https://github.com/angelo96m/docker-workshop/blob/main/images/project_arch.png)
 ## About the Course
 
 **Data Engineering Zoomcamp** is a free, hands-on program that covers the end-to-end data engineering stack, including:
