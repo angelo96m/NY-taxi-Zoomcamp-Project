@@ -32,7 +32,7 @@ def ride_serializer(ride):
     ride_json = json.dumps(ride_dict).encode('utf-8')
     return ride_json
 
-
+#Consumer part: 
 def ride_deserializer(data):
     json_str = data.decode('utf-8')
     ride_dict = json.loads(json_str)
