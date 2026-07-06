@@ -6,6 +6,9 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+# It generates random taxi trips with current timestamps, 
+# but ~20% of events are sent with a timestamp 3-10 seconds in the past (simulating network delays).
+
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from kafka import KafkaProducer

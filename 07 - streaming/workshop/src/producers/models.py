@@ -33,6 +33,9 @@ def ride_serializer(ride):
     return ride_json
 
 #Consumer part: 
+# The consumer receives raw bytes from Kafka. 
+# Instead of deserializing to a dict and then constructing a Ride manually, 
+#let's write a function that does both in one step: 
 def ride_deserializer(data):
     json_str = data.decode('utf-8')
     ride_dict = json.loads(json_str)

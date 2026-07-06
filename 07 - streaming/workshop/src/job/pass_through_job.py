@@ -46,7 +46,7 @@ def create_processed_events_sink_postgres(t_env):
     return table_name
 
 
-
+#Execution:
 def log_processing():
     env = StreamExecutionEnvironment.get_execution_environment()
     env.enable_checkpointing(10 * 1000)  # checkpoint every 10 seconds
